@@ -41,8 +41,6 @@ nav{
     width: 25%;
 }
 
-
-
 .menu li{
     list-style: none;
 }
@@ -208,7 +206,7 @@ nav{
 
 .skill-item{
     width: 100%;
-    background-color: #ddd;
+    background-color: #ddd
 }
 
 .skill{

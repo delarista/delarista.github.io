@@ -41,6 +41,8 @@ nav{
     width: 25%;
 }
 
+
+
 .menu li{
     list-style: none;
 }
@@ -48,6 +50,13 @@ nav{
 .menu a{
     text-decoration: none;
     color: white;
+}
+
+.menu li a:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+
 }
 
 .burger{
@@ -128,7 +137,7 @@ nav{
 }
 
 .title h3{
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -192,6 +201,94 @@ nav{
     background-color: white;
 }
 
+.skills p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skill-item{
+    width: 100%;
+    background-color: #ddd
+}
+
+.skill{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white; 
+}
+
+.html {width: 90%; background-color: #968c83;}
+.css {width: 80%; background-color: #968c83;}
+.js {width: 65%; background-color: #968c83;}
+.php {width: 60%; background-color: #968c83;}
+
+
+.projek-item{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.projek-item p{
+    display: block;
+}
+
+.projek-item img{
+    width: 300px;
+    
+    display: block;
+    object-fit: cover;
+}
+
+.projek-item h5{
+    margin-top: 5px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(66, 66, 61, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.projek-item:hover .overlay{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.overlay-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-text a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.overlay-text:visited a{
+    color: #fff;
+}
+
 .contact{
     margin-bottom: 20px;
 }
@@ -211,7 +308,7 @@ footer{
     padding: 20px;
 }
 
-.fa{
+footer .fa{
     font-size: 30px; 
     padding: 10px;
     width: 50px;
@@ -221,16 +318,20 @@ footer{
     color: white;
 }
 
-.fa-facebook:hover{
+footer .fa-facebook:hover{
     background:#3B5998;
 }
 
-.fa-instagram:hover{
+footer .fa-instagram:hover{
     background-color: #125688;
 }
 
-.fa-linkedin:hover{
+footer .fa-linkedin:hover{
     background-color: #007bb5;
+} 
+
+footer .fa-github:hover{
+    background-color: #333;
 } 
 
 .sosial-media li{

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------Header-----------------*/
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 55px;
+    background-color: #968c83;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 2px 2px 12px black;
+}
+
+.name{
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.menu{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 5px;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/city.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image .hero-text{
+    color:white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 10px;
+
+}
+
+.hero-text p{
+    padding: 10px;
+    font-size: 18px;  
+    letter-spacing: 5px; 
+}
+
+.hero-btn{
+    color: white;
+    border-radius: 50px;
+    background-color: #968c83;
+    text-decoration: none;
+    padding: 10px 30px;
+    line-height: 90px;
+    margin-top:30px;
+    text-transform: uppercase;
+}
+
+.container{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#about{
+    text-align: center;
+}
+
+#experience, #portfolio{
+    background-color: #b4b0ac;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.title h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.deskripsi-about{
+    display: flex;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    margin: auto;
+}
+
+.deskripsi-about img{
+    padding: 30px;
+    align-items: center;
+    width: 350px;
+    border-radius: 50%;   
+}
+
+.deskripsi-about .about-text{
+    justify-content: center;
+    align-items: center;
+}
+
+.deskripsi-about p{
+    font-size: 16px;
+    padding: 5px;
+    text-align: justify;  
+    
+}
+
+.deskripsi-experience{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.des-item h4{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.des-item p{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.card{
+    text-align: center;
+    width: 500px;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 5px;
+    box-shadow: 0 2px 8px -2px rgba(0,0,0,.2);
+    background-color: white;
+}
+
+.contact{
+    margin-bottom: 20px;
+}
+
+.contact-text p{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #968c83;
+    color: white;
+    padding: 20px;
+}
+
+.fa{
+    font-size: 30px; 
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background:#b4b0ac;
+    color: white;
+}
+
+.fa-facebook:hover{
+    background:#3B5998;
+}
+
+.fa-instagram:hover{
+    background-color: #125688;
+}
+
+.fa-linkedin:hover{
+    background-color: #007bb5;
+} 
+
+.sosial-media li{
+    display: inline;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.sosial-media li a{
+    text-decoration: none;
+}
+
+
+.copyright{
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width:1024px){
+    .menu{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+   .menu{
+       position: absolute;
+       right: 0px;
+       height: 500px;
+       top: 55px;
+       background-color:#968c83 ;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   .burger{
+       display: block;
+   }
+   .deskripsi-about{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+   }
+
+   .left, .right{
+       width: 100%;
+   }
+
+   .deskripsi-about img{
+       width: 100%;
+       padding: 20px;
+       align-items: center;
+   }
+
+   .about-text p{
+       text-align: left;
+   }
+}
+
+.menu-active{
+    transform: translateX(0%);
+}

@@ -110,6 +110,11 @@ nav{
     text-transform: uppercase;
 }
 
+.hero-btn:hover{
+    color: #000;
+    background-color: white;
+}
+
 .container{
     margin: auto;
     width: 60%;
@@ -123,7 +128,7 @@ nav{
     text-align: center;
 }
 
-#experience, #portfolio{
+#education, #portfolio{
     background-color: #b4b0ac;
     text-align: center;
     margin-top: 20px;
@@ -136,7 +141,7 @@ nav{
 
 .title h3{
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .deskripsi-about{
@@ -179,7 +184,7 @@ nav{
 }
 
 .des-item h4{
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px;
 }
 
@@ -206,20 +211,22 @@ nav{
 
 .skill-item{
     width: 100%;
-    background-color: #ddd
+    background-color: #ddd;
 }
 
 .skill{
     text-align: right;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
     color: white; 
 }
 
-.html {width: 90%; background-color: #968c83;}
-.css {width: 80%; background-color: #968c83;}
-.js {width: 65%; background-color: #968c83;}
-.php {width: 60%; background-color: #968c83;}
+.html {width: 70%; background-color: #968c83;}
+.css {width: 40%; background-color: #968c83;}
+.js {width: 30%; background-color: #968c83;}
+.php {width: 40%; background-color: #968c83;}
+.bs {width: 50%; background-color: #968c83;}
+
 
 
 .projek-item{
@@ -347,7 +354,7 @@ footer .fa-github:hover{
 
 .copyright{
     font-family: 'Lato', sans-serif;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
